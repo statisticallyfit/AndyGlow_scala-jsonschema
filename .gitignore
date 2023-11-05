@@ -1,9 +1,57 @@
-.bsp
-.DS_Store
-.idea/
-target/
-project/target
+# has github token - don't want it seen
+.env
 
-/TODO.md
-*.afdesign
-*.afphoto
+# Keeping this .avdl / .avsc / .json data private (from tati's office)
+# /development/projects/statisticallyfit/github/learningdataflow/SchaemeowMorphism/src/test/scala/testData/testDataPrivateTati
+src/test/scala/testData/testDataPrivateTati/
+src/test/scala/testData/testDataPrivateTati/*
+
+# Not committing the avro-tools-jar (too big?)
+src/test/scala/testTools/
+src/test/scala/testTools/*
+
+
+#project/*
+#project
+
+project/.boot/
+project/.boot/*
+
+project/.sbtboot/
+project/.sbtboot/*
+
+project/.ivy/*
+project/.ivy/
+
+project/target
+project/target/*
+
+#project/project/*
+#project/project/
+
+
+
+target
+target/
+target/*
+
+.idea
+.idea/
+.idea/*
+
+.history
+.bsp/
+
+
+.metadata
+.cache-main
+.classpath
+.project
+.settings
+*.class
+*.orig
+*.log
+
+.DS_Store
+*.iml
+scalastyle-output.xml
