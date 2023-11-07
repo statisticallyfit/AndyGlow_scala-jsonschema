@@ -20,6 +20,7 @@ object Json {
     implicit def derived[T]: Predef[T] = macro Macroses.derivePredef[T]
   }
 
+  // TODO change here the argument?
   def stringify[T, V <: Version: AsValueBuilder](schema: Schema[T], version: V): String =
     schema.stringify(version)
 }
